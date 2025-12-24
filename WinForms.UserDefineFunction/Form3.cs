@@ -28,7 +28,7 @@ namespace WinForms.UserDefineFunction
             else if (radioButton2.Checked)
             {
               
-                textBox3.Text = Triangle2(letter);
+                textBox3.Text = Triangle2(letter,size);
             }
             else if (radioButton3.Checked)
             {
@@ -52,9 +52,9 @@ namespace WinForms.UserDefineFunction
 
         }
 
-        private string Triangle2(string letter)
+        private string Triangle2(string letter,int size = 5)
         {
-            for (int i = 1; i <= 5; i++)
+            for(int i = 1; i <= size; i++)
             {
                 for (int j = 1; j <= i; j++)
                 {
